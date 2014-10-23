@@ -1,0 +1,27 @@
+{
+  "name": "jquery-ajaxform",
+  "main": "jquery-ajaxform.js",
+  "version": "0.0.0",
+  "authors": [
+    "Yves Van Broekhoven <yvesvanbroekhoven@gmail.com>"
+  ],
+  "description": "Simple async forms",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "jquery",
+    "ajax",
+    "form"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
