@@ -26,6 +26,22 @@
 
 
 /**
+ * jQuery function
+ *
+ * @param  {Object} options
+ *
+ * @return {jQuery array}
+ */
+$.fn.ajaxform = function(options) {
+  return this.each(function() {
+    if ( !$.data(this, 'ajaxform') ) {
+      $.data(this, 'ajaxform', new Ajaxform( $(this), options));
+    }
+  });
+}
+
+
+/**
  * @constructor
  *
  * @param {jQuery element}  element
