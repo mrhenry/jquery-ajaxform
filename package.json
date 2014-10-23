@@ -1,13 +1,17 @@
 {
   "name": "jquery-ajaxform",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Simple async forms",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.8.7"
   },
   "devDependencies": {
+    "gulp-bump": "^0.1.11",
+    "gulp-filter": "^1.0.2",
+    "gulp-git": "^0.5.3",
     "gulp-rename": "^1.2.0",
+    "gulp-tag-version": "^1.1.0",
     "gulp-uglify": "^1.0.1",
     "gulp-umd": "^0.1.3"
   },

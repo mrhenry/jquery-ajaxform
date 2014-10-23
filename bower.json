@@ -1,7 +1,7 @@
 {
   "name": "jquery-ajaxform",
   "main": "jquery-ajaxform.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "authors": [
     "Yves Van Broekhoven <yvesvanbroekhoven@gmail.com>"
   ],
