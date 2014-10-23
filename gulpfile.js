@@ -40,7 +40,7 @@ gulp.task('default', function() {
 
 
 
-function inc(importance) {
+function release(importance) {
     // get all the files to bump version in
     return gulp.src(['./package.json', './bower.json'])
         // bump the version number in those files
@@ -49,14 +49,13 @@ function inc(importance) {
         .pipe(gulp.dest('./'))
         // commit the changed version number
         .pipe(git.commit('bumps package version'))
-
         // read only one file to get the version number
         .pipe(filter('package.json'))
-        // **tag it in the repository**
+        // tag it in the repository
         .pipe(tagVersion())
-        .pipe(git.push('origin', 'master', { args: '--tags' }));
+        //.pipe(git.push({ args: ' --tags' }), function(err){ err } );
 }
 
-gulp.task('patch', function() { return inc('patch'); })
-gulp.task('feature', function() { return inc('minor'); })
-gulp.task('release', function() { return inc('major'); })
+gulp.task('patch', function() { return release('patch'); });
+gulp.task('minor', function() { return release('minor'); });
+gulp.task('major', function() { return release('major'); });
